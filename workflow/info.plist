@@ -3,14 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>me.zhaowu.alfred2-ruby-template</string>
+	<string>com.402v.workspace</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+				<string>2D733FEE-E915-40A0-A206-B25C9DE5FA08</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>2D733FEE-E915-40A0-A206-B25C9DE5FA08</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5454BC8C-B01F-406B-9037-7C3B4BCD214E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,7 +34,18 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+				<string>C29CE7D7-09B7-4D63-9C6A-64890A4D54FC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>C29CE7D7-09B7-4D63-9C6A-64890A4D54FC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5454BC8C-B01F-406B-9037-7C3B4BCD214E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -30,13 +54,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Zhao Cai</string>
+	<string>kimimaro</string>
 	<key>description</key>
-	<string>A starting place for developing Ruby based workflow in Alfred</string>
+	<string>workspace for me</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Ruby Based Workflow Template</string>
+	<string>Workspace</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -47,15 +71,23 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>test feedback</string>
+				<string>hi</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>working...</string>
 				<key>script</key>
-				<string>/usr/bin/ruby ./main.rb {query}</string>
+				<string>LANG=en_US.UTF-8 ~/.rbenv/shims/ruby ./main.rb {query}</string>
 				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
+				<string>say hi to a workspace</string>
 				<key>title</key>
-				<string>Test Alfred Feedback</string>
+				<string>say hi to a workspace</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -65,6 +97,27 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>21557827-8003-42B7-A042-16D4C9278FEC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>LANG=en_US.UTF-8 ~/.rbenv/shims/ruby ./sayhi.rb {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2D733FEE-E915-40A0-A206-B25C9DE5FA08</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -72,7 +125,7 @@
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<true/>
+				<false/>
 				<key>output</key>
 				<integer>0</integer>
 				<key>removeextension</key>
@@ -82,12 +135,33 @@
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>Ruby Script</string>
+				<string>Done</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>42D05639-3F0F-4760-8214-317167E4173D</string>
+			<string>5454BC8C-B01F-406B-9037-7C3B4BCD214E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>LANG=en_US.UTF-8 ~/.rbenv/shims/ruby ./saybye.rb {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C29CE7D7-09B7-4D63-9C6A-64890A4D54FC</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -97,15 +171,23 @@
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>keyword</key>
-				<string>test rescue feedback</string>
+				<string>bye</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>...</string>
 				<key>script</key>
-				<string>/usr/bin/ruby ./main_with_rescue_feedback.rb {query}</string>
+				<string>LANG=en_US.UTF-8 ~/.rbenv/shims/ruby ./main.rb {query}</string>
 				<key>subtext</key>
-				<string>Ruby Based Workflow Template</string>
+				<string>Say bye to a workspace</string>
 				<key>title</key>
-				<string>Test Alfred Rescue Feedback</string>
+				<string>Say bye to a workspace</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -115,6 +197,8 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>BA17BE41-176A-4E9A-B958-A3F0BEA36829</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -124,9 +208,14 @@
 		<key>21557827-8003-42B7-A042-16D4C9278FEC</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>70</real>
 		</dict>
-		<key>42D05639-3F0F-4760-8214-317167E4173D</key>
+		<key>2D733FEE-E915-40A0-A206-B25C9DE5FA08</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>5454BC8C-B01F-406B-9037-7C3B4BCD214E</key>
 		<dict>
 			<key>ypos</key>
 			<real>140</real>
@@ -134,10 +223,15 @@
 		<key>BA17BE41-176A-4E9A-B958-A3F0BEA36829</key>
 		<dict>
 			<key>ypos</key>
-			<real>370</real>
+			<real>210</real>
+		</dict>
+		<key>C29CE7D7-09B7-4D63-9C6A-64890A4D54FC</key>
+		<dict>
+			<key>ypos</key>
+			<real>210</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>http://github.com/zhaocai/alfred2-ruby-template</string>
+	<string>http://402v.com</string>
 </dict>
 </plist>

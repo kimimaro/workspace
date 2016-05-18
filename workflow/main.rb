@@ -25,29 +25,47 @@ Alfred.with_friendly_error do |alfred|
   # add an feedback to test rescue feedback
   fb.add_item({
     :uid          => ""                     ,
-    :title        => "Message" ,
-    :subtitle     => "沟通" ,
-    :arg          => "im"                     ,
+    :title        => "Chat" ,
+    :subtitle     => "聊天" ,
+    :arg          => "chat"                     ,
     :valid        => "yes"                   ,
   })
 
   # add an feedback to test rescue feedback
   fb.add_item({
     :uid          => ""                     ,
-    :title        => "Note" ,
-    :subtitle     => "记笔记" ,
-    :arg          => "note"                     ,
+    :title        => "Reading" ,
+    :subtitle     => "阅读" ,
+    :arg          => "read"                     ,
     :valid        => "yes"                   ,
   })
 
   # add an feedback to test rescue feedback
   fb.add_item({
     :uid          => ""                     ,
-    :title        => "Alfred" ,
-    :subtitle     => "Alfred Script" ,
-    :arg          => "alfred"                     ,
+    :title        => "Coding" ,
+    :subtitle     => "敲代码" ,
+    :arg          => "code"                     ,
     :valid        => "yes"                   ,
   })
+
+  # add an feedback to test rescue feedback
+  #fb.add_item({
+  #  :uid          => ""                     ,
+  #  :title        => "Note" ,
+  #  :subtitle     => "笔记" ,
+  #  :arg          => "note"                     ,
+  #  :valid        => "yes"                   ,
+  #})
+
+  # add an feedback to test rescue feedback
+  #fb.add_item({
+  #  :uid          => ""                     ,
+  #  :title        => "Alfred" ,
+  #  :subtitle     => "Alfred Script" ,
+  #  :arg          => "alfred"                     ,
+  #  :valid        => "yes"                   ,
+  #})
 
   # if ARGV[0].eql? "failed"
   #   alfred.with_rescue_feedback = true

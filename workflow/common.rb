@@ -8,10 +8,14 @@ LOGGER.level = Logger::WARN
 LOGGER.level = Logger::DEBUG
 
 INVOKE_APPS_HASH = {
-  zhihu:  ["Slack.app", "Evernote.app", "Google Chrome.app"],
+  work:   ["Evernote.app", "Google Chrome.app"],
   chat:   ["WeChat.app"],
   read:   ["Google Chrome.app", "Pocket.app"],
-  code:   ["Xcode.app", "Atom.app", "Dash.app"]
+  code:   ["Xcode.app", "Atom.app", "Dash.app", "Xcode.app/Contents/Developer/Applications/Simulator.app", "Reveal.app"]
+}
+
+CLOSE_APP_HASH = {
+  code: ["Simulator.app"] # 与 Invoke 路径不同
 }
 
 SCRIPT_INVOKE_APPS_HASH = {
@@ -24,7 +28,7 @@ INVOKE_FILE_HASH = {
 }
 
 INVOKE_URL_HASH = {
-  zhihu:  ["https://inbox.google.com/u/1/", "http://ph.in.zhihu.com", "https://calendar.google.com/calendar/b/1/render?tab=wc#main_7"],
+  work:  ["https://inbox.google.com/u/1/", "http://ph.in.zhihu.com", "https://calendar.google.com/calendar/b/1/render?tab=wc#main_7", "http://zhihu.ourats.com/v3/", "https://fabric.io/home", "http://ph.in.zhihu.com/project/board/132/query/assigned/?order=priority", "http://ph.in.zhihu.com/differential/"],
   # stock:        ["http://www.eastmoney.com/"],
   # chat:   ["https://inbox.google.com/"],
   blog:   ["http://402v.com/", "http://402v.com/tag/server/"],

@@ -6,7 +6,6 @@ require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
 require "alfred"
 
 
-
 Alfred.with_friendly_error do |alfred|
   fb = alfred.feedback
 
@@ -16,9 +15,9 @@ Alfred.with_friendly_error do |alfred|
   # add an arbitrary feedback
   fb.add_item({
     :uid      => ""                     ,
-    :title    => "Zhihu"          ,
+    :title    => "Working"          ,
     :subtitle => "知乎"        ,
-    :arg      => "zhihu" ,
+    :arg      => "work" ,
     :valid    => "yes"                  ,
   })
 
